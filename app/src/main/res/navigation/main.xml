@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main"
+    app:startDestination="@id/contentsListFragment">
+
+    <fragment
+        android:id="@+id/contentsListFragment"
+        android:name="com.amir.testapp.ui.fragment.ContentsListFragment"
+        android:label="لیست محتوا" >
+        <action
+            android:id="@+id/action_contentsListFragment_to_contentShowFragment"
+            app:destination="@id/contentShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentShowFragment"
+        android:name="com.amir.testapp.ui.fragment.ContentShowFragment"
+        android:label="نمایش محتوا" >
+        <argument
+            android:name="contentId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesListFragment"
+        android:name="com.amir.testapp.ui.fragment.FavoritesListFragment"
+        android:label="لیست علاقه‌مندی‌ها" >
+        <action
+            android:id="@+id/action_favoritesListFragment_to_contentShowFragment"
+            app:destination="@id/contentShowFragment" />
+    </fragment>
+</navigation>
