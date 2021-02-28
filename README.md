@@ -9,4 +9,8 @@ MVVM + Dagger Hilt + Retrofit + Room + Navigation Component + Paging + Glide
 امکان مشاهده  محتویات هر فیلم
 
 (کامل نیست)افزودن به لیست علاقه مندی ها
+
+و 
+
 مشاهده و حذف علاقه مندی ها
+
